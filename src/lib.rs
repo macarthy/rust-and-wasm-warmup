@@ -14,6 +14,7 @@ extern {
 }
 
 #[wasm_bindgen]
-pub fn greet() {
-    alert("Hello, rust-and-wasm-warmup!");
+pub fn greet(name: &str) {
+    alert(&format!("Hello {}, rust-and-wasm-warmup!", name));
+    
 }
